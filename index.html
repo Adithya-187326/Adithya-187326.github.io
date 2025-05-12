@@ -1,11 +1,139 @@
- <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<!DOCTYPE html>
 
-<h1>My First Heading</h1>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Adithya" />
+    <meta
+      name="description"
+      content="This page contains all that I am learning HTML as I work towards create my Portfolio website"
+    />
+    <link rel="icon" href="tab_img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Adithya's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+      <h1><i>Adithya Venkata Narayanan</i></h1>
+    </header>
 
-</body>
-</html> 
+    <hr />
+
+    <main>
+      <section id="Profile">
+        <h1>Who am I?</h1>
+        <p><a href="#">My Profile</a></p>
+      </section>
+
+      <hr />
+
+      <section id="Education">
+        <h1>Educational Background</h1>
+      </section>
+
+      <hr />
+
+      <section id="Skills">
+        <h1>Skills</h1>
+      </section>
+
+      <hr />
+
+      <section id="Interests">
+        <h1>Interests</h1>
+      </section>
+
+      <hr />
+
+      <section id="Experience">
+        <h1>Work & Research Experience</h1>
+      </section>
+
+      <hr />
+
+      <section id="Projects">
+        <h1>Projects</h1>
+      </section>
+
+      <hr />
+
+      <section id="Mini Projects">
+        <h1>Mini Projects</h1>
+      </section>
+
+      <hr />
+
+      <section id="Achievements">
+        <h1>Achievements</h1>
+      </section>
+
+      <hr />
+
+      <section id="Hobbies">
+        <h1>Other Interests & Hobbies</h1>
+      </section>
+
+      <hr />
+
+      <section id="Contact Me">
+        <h1>Contact Me</h1>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send me a Message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email ID:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                id="email"
+                placeholder="Your Email ID"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Your Message:</label>
+              <br />
+              <textarea
+                id="message"
+                name="user_message"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section id="Address">
+        <h2>Address</h2>
+        <address>
+          R2D2 Laboratory,
+          <br />
+          MDS 311, Machine Design Section,
+          <br />
+          Department of Mechanical Engineering,
+          <br />
+          IIT Madras, Chennai, Tamil Nadu 600036
+        </address>
+      </section>
+    </main>
+
+    <footer><a href="#">Back to top</a></footer>
+  </body>
+</html>

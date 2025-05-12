@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(161, 208, 236);
+  color: whitesmoke;
+}
+
+a {
+  color: dodgerblue;
+}
+
+a:hover,
+a:active {
+  color: crimson;
+}
