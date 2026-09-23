@@ -300,12 +300,14 @@ h1 { font-size: clamp(26px, 6.4vw, 40px); font-weight: 700; letter-spacing: -0.0
 .group-cards { display: grid; gap: 10px; }
 
 /* ---------- Media rows (videos inside cards) ---------- */
-.media-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 440px; margin: 0 0 14px; }
-.media-row.single { grid-template-columns: minmax(0, 220px); }
+/* Centred in the card: pairs split the row evenly, a single video sits in the middle */
+.media-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 440px; margin: 0 auto 14px; }
+.media-row.single { grid-template-columns: minmax(0, 220px); justify-content: center; }
 .media-row figure { margin: 0; min-width: 0; }
 .media-row .media { margin: 0; }
 .media.is-vertical { aspect-ratio: 9 / 16; }
 .clip { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; background: #000; border-radius: 4px; }
 .media-row figcaption, .media-fig figcaption { margin-top: 6px; font: 11px/1.4 var(--mono); color: var(--faint); }
+.media-row figcaption { text-align: center; }
 .media-fig { margin: 12px 0 4px; }
 .media-fig .media { margin: 0; }
