@@ -1,11 +1,506 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adithya Venkata Narayanan · Mechatronics</title>
+  <meta name="description" content="Mechatronics engineer building assistive-robotics systems end to end: sensing, motor control, embedded firmware and wireless architecture. M.Sc. Robotic Systems Engineering, RWTH Aachen.">
+  <meta name="theme-color" content="#9a1626">
+  <meta property="og:title" content="Adithya Venkata Narayanan · Mechatronics">
+  <meta property="og:description" content="Assistive robotics, motor control and embedded systems. Open to HiWi / Werkstudent roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://adithya-187326.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239a1626'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EAV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    /* Pick language before first paint: ?lang= > saved choice > browser language */
+    (function () {
+      var l = new URLSearchParams(location.search).get('lang');
+      if (!l) { try { l = localStorage.getItem('lang'); } catch (e) {} }
+      if (!l) { l = (navigator.language || 'en').toLowerCase().indexOf('de') === 0 ? 'de' : 'en'; }
+      document.documentElement.lang = l === 'de' ? 'de' : 'en';
+    })();
+  </script>
 </head>
 <body>
 
-<h1>My First Heading</h1>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="mono brand" href="#top">AVN<span class="brand-dot">.</span></a>
+    <nav class="topnav mono" aria-label="Sections">
+      <a href="#projects"><span lang="en">Projects</span><span lang="de">Projekte</span></a>
+      <a href="#experience"><span lang="en">Experience</span><span lang="de">Erfahrung</span></a>
+      <a href="#contact"><span lang="en">Contact</span><span lang="de">Kontakt</span></a>
+    </nav>
+    <div class="lang-toggle mono" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en">EN</button>
+      <button type="button" data-set-lang="de">DE</button>
+    </div>
+  </div>
+</header>
 
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <!-- Remove this line after the fair -->
+      <p class="event mono">
+        <span class="pulse" aria-hidden="true"></span>
+        <span lang="en">At REHACARE 2026, Düsseldorf. Let's talk!</span>
+        <span lang="de">Auf der REHACARE 2026 in Düsseldorf. Sprechen Sie mich gerne an!</span>
+      </p>
+
+      <div class="hero-grid">
+        <img class="photo" src="assets/user.jpg" width="600" height="800" alt="Portrait of Adithya Venkata Narayanan">
+
+        <div class="hero-text">
+          <h1>Adithya Venkata Narayanan</h1>
+          <p class="role mono">
+            <span lang="en">Mechatronics · Assistive robotics · Control</span>
+            <span lang="de">Mechatronik · Assistenzrobotik · Regelungstechnik</span>
+          </p>
+          <p class="meta">
+            <span lang="en">M.Sc. Robotic Systems Engineering, RWTH Aachen</span>
+            <span lang="de">M.Sc. Robotic Systems Engineering, RWTH Aachen</span>
+          </p>
+        </div>
+      </div>
+
+      <p class="lede">
+        <span lang="en">I build assistive-robotics systems end to end: sensing and analog front-ends, motor control, embedded firmware and wireless architecture. From 2022 to 2026, first as an intern and then as team lead, I took wheelchair-mobility products from prototype to production at an IIT Madras start-up. Along the way, I worked on adaptive control for a self-balancing wheelchair with Imperial College London.</span>
+        <span lang="de">Ich entwickle Systeme für die Assistenzrobotik durchgängig: von Sensorik und analogen Frontends über Motorregelung und Embedded-Firmware bis zur drahtlosen Systemarchitektur. Von 2022 bis 2026 habe ich bei einem Start-up der IIT Madras Rollstuhl-Mobilitätsprodukte vom Prototyp bis zur Serie gebracht, zunächst im Praktikum, dann in der Teamleitung. In dieser Zeit habe ich außerdem mit dem Imperial College London eine adaptive Regelung für einen selbstbalancierenden Rollstuhl entwickelt.</span>
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="assets/Adithya_Venkata_Narayanan_CV.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          <span lang="en">Download CV</span><span lang="de">Lebenslauf (PDF)</span>
+        </a>
+        <a class="btn" href="mailto:adithyavnarayanan@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7"/></svg>
+          <span lang="en">Email</span><span lang="de">E-Mail</span>
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/adithya-venkata-narayanan/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h3v11H4zM5.5 4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M10 9h3v1.6c.6-1 1.8-1.8 3.5-1.8 2.6 0 3.5 1.7 3.5 4.4V20h-3v-6c0-1.4-.4-2.4-1.8-2.4S13 12.6 13 14v6h-3z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn" href="https://github.com/Adithya-187326" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          GitHub
+        </a>
+      </div>
+
+      <!-- ============ OPEN TO ============ -->
+      <section class="status" aria-labelledby="status-h">
+        <p id="status-h" class="status-label mono"><span lang="en">Open to</span><span lang="de">Offen für</span></p>
+        <dl class="status-rows">
+          <div>
+            <dt class="mono"><span lang="en">Now</span><span lang="de">Ab sofort</span></dt>
+            <dd>
+              <span lang="en"><strong>HiWi / Werkstudent</strong>, remote, <span class="nowrap">20 h/week</span> during term</span>
+              <span lang="de"><strong>HiWi / Werkstudent</strong>, remote, <span class="nowrap">20 Std./Woche</span> im Semester</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono"><span lang="en">Summer '27</span><span lang="de">Sommer '27</span></dt>
+            <dd>
+              <span lang="en"><strong>Full-time on-site internship</strong> or <strong>Master's thesis</strong> in industry. Happy to start conversations now.</span>
+              <span lang="de"><strong>Vollzeit-Praktikum vor Ort</strong> oder <strong>Masterarbeit</strong> in der Industrie. Gespräche gerne schon jetzt.</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono"><span lang="en">Fields</span><span lang="de">Bereiche</span></dt>
+            <dd>
+              <span lang="en">Rehab &amp; assistive robotics · Powered prosthetics · Orthoses &amp; exoskeletons</span>
+              <span lang="de">Rehabilitations- &amp; Assistenzrobotik · Aktive Prothetik · Orthesen &amp; Exoskelette</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono"><span lang="en">Based in</span><span lang="de">Standort</span></dt>
+            <dd>Aachen, <span lang="en">Germany</span><span lang="de">Deutschland</span></dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <!--
+    Each project card is an <article class="card">.
+    To add a YouTube video, set data-yt to its link (Shorts work too) or its ID.
+    Leave it empty (or remove it) for a text-only card.
+  -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">01</span><span lang="en">Selected projects</span><span lang="de">Ausgewählte Projekte</span></h2>
+
+      <div class="cards">
+        <!-- Thryv products grouped as one ecosystem -->
+        <section class="group" aria-labelledby="eco-h">
+          <header class="group-head">
+            <p class="group-kicker mono">THRYV MOBILITY · IIT MADRAS · 2022–26</p>
+            <h3 id="eco-h"><span lang="en">An assistive-mobility ecosystem</span><span lang="de">Ein Ökosystem für assistive Mobilität</span></h3>
+            <p>
+              <span lang="en">Three products taken from prototype to production, connected by one Bluetooth platform that I designed. Any control unit works with any drive.</span>
+              <span lang="de">Drei Produkte vom Prototyp bis zur Serie, verbunden durch eine von mir entworfene Bluetooth-Plattform. Jede Bedieneinheit funktioniert mit jedem Antrieb.</span>
+            </p>
+            <p class="eco-map mono" aria-hidden="true">
+              <span class="node">Gesture Control</span><span class="link">⇄ BLE ⇄</span><span class="node">Smart-Wheels</span><span class="node">Three-Way Power-Assist</span>
+            </p>
+          </header>
+          <div class="group-cards">
+            <article class="card" data-yt="">
+              <header class="card-head mono"><span>[01]</span><span>2024–26</span></header>
+              <div class="media-row single">
+                <figure>
+                  <div class="yt" data-yt="https://youtube.com/shorts/2Y5q5Jsb0qA"></div>
+                  <figcaption><span lang="en">Early prototype: cruise-control demo</span><span lang="de">Früher Prototyp: Tempomat-Demo</span></figcaption>
+                </figure>
+              </div>
+              <h3>Smart-Wheels</h3>
+              <p class="card-sub">
+                <span lang="en">Hub-integrated power-assist wheel for manual wheelchairs.</span>
+                <span lang="de">In die Nabe integriertes Power-Assist-Rad für Greifreifenrollstühle.</span>
+              </p>
+              <ul>
+                <li><span lang="en">Led the drive platform end to end, from architecture and milestones to budget, integrating the BLDC drive, load-cell sensing and control electronics.</span><span lang="de">Leitung der Antriebsplattform von der Architektur über Meilensteine bis zum Budget, mit Integration von BLDC-Antrieb, Wägezellen-Sensorik und Steuerelektronik.</span></li>
+                <li><span lang="en">Closed sensing–actuation loop: push-rim load cells → instrumentation-amp chain → high-res sigma-delta ADC (few-hundred-gram sensitivity), streamed over BLE to the drive unit.</span><span lang="de">Geschlossener Sensor-Aktor-Kreis: Wägezellen am Greifring → Instrumentenverstärker-Kette → hochauflösender Sigma-Delta-ADC (Empfindlichkeit von wenigen hundert Gramm), per BLE an die Antriebseinheit übertragen.</span></li>
+                <li><span lang="en">Amplifies user torque within safety current clamps and actively shapes the coast-down to extend glide. All parameters are live-tunable from the Thryv app.</span><span lang="de">Verstärkt das Drehmoment der Nutzenden innerhalb sicherer Stromgrenzen und formt aktiv das Ausrollverhalten für längeres Gleiten. Alle Parameter sind live über die Thryv-App einstellbar.</span></li>
+              </ul>
+              <p class="tags mono"><span>BLDC</span><span>Load cells</span><span>Analog front-end</span><span>BLE</span><span>PCB</span></p>
+            </article>
+            <article class="card" data-yt="https://youtu.be/aEcnuoCX1SI">
+              <header class="card-head mono"><span>[02]</span><span>2022–24</span></header>
+              <h3><span lang="en">Three-Way Power-Assist</span><span lang="de">Three-Way Power-Assist</span></h3>
+              <p class="card-sub">
+                <span lang="en">Modular, BLE-enabled power-assist device with multiple drive modes.</span>
+                <span lang="de">Modulares, BLE-fähiges Power-Assist-Gerät mit mehreren Fahrmodi.</span>
+              </p>
+              <ul>
+                <li><span lang="en">Developed the motor-control subsystem and its interface to the main microcontroller, with failsafe switches for reliable operation.</span><span lang="de">Motorsteuerungs-Subsystem samt Anbindung an den Hauptmikrocontroller entwickelt, mit Failsafe-Schaltern für einen zuverlässigen Betrieb.</span></li>
+                <li><span lang="en">Finite-state machine coordinating the drive modes.</span><span lang="de">Zustandsautomat zur Koordination der Fahrmodi.</span></li>
+                <li><span lang="en">Designed and built the console (OLED GUI, throttle, tactile switches), with a safety stop within <strong>400 ms</strong> if the BLE link drops.</span><span lang="de">Bedienkonsole entworfen und gebaut (OLED-Oberfläche, Gashebel, Taster), mit Sicherheitsstopp innerhalb von <strong>400 ms</strong> bei Abbruch der BLE-Verbindung.</span></li>
+              </ul>
+              <p class="tags mono"><span>Motor control</span><span>State machine</span><span>BLE</span><span>Safety</span></p>
+            </article>
+            <article class="card" data-yt="">
+              <header class="card-head mono"><span>[03]</span><span>2022–26</span></header>
+              <h3>Gesture Control Unit</h3>
+              <p class="card-sub">
+                <span lang="en">Wrist-worn gesture interface for assistive mobility devices.</span>
+                <span lang="de">Am Handgelenk getragene Gestensteuerung für assistive Mobilitätsgeräte.</span>
+              </p>
+              <ul>
+                <li><span lang="en">Schematic-to-PCB design on ESP32-C3. Iterated the IMU (ICM-42688P → LIS2DH → LSM6DSx) for tap detection and 6-DOF sensing at lower cost and power.</span><span lang="de">Vom Schaltplan bis zur Platine auf Basis des ESP32-C3. IMU iterativ optimiert (ICM-42688P → LIS2DH → LSM6DSx) für Tap-Erkennung und 6-DOF-Sensorik bei geringeren Kosten und weniger Energiebedarf.</span></li>
+                <li><span lang="en">Traced most of the quiescent draw to the charger IC and designed a MOSFET power-gating circuit for true load disconnect. Off-state current is now at <strong>nA level</strong>, and the device still charges without waking.</span><span lang="de">Lade-IC als Hauptursache des Ruhestroms identifiziert und eine MOSFET-Abschaltung für echte Lasttrennung entworfen. Der Ruhestrom liegt nun im <strong>nA-Bereich</strong>, und das Gerät lädt weiterhin, ohne aufzuwachen.</span></li>
+                <li><span lang="en">Power-optimised BLE firmware, press-and-hold sleep/wake and an onboard fuel gauge (SOC/SOH/TTE/TTF). Evolved over several iterations into a production control interface.</span><span lang="de">Energieoptimierte BLE-Firmware, Ein/Aus per langem Tastendruck und Fuel-Gauge (SOC/SOH/TTE/TTF). Über mehrere Iterationen zur Serien-Bedieneinheit weiterentwickelt.</span></li>
+              </ul>
+              <p class="tags mono"><span>ESP32-C3</span><span>IMU</span><span>Low-power</span><span>BLE</span><span>PCB</span></p>
+            </article>
+            <article class="card" data-yt="">
+              <header class="card-head mono"><span>[04]</span><span>2024–26</span></header>
+              <h3><span lang="en">Wireless, Security &amp; OTA Platform</span><span lang="de">Funk-, Sicherheits- &amp; OTA-Plattform</span></h3>
+              <p class="card-sub">
+                <span lang="en">The shared BLE architecture linking the three products above.</span>
+                <span lang="de">Die gemeinsame BLE-Architektur, die die drei Produkte oben verbindet.</span>
+              </p>
+              <ul>
+                <li><span lang="en">Any control unit pairs interchangeably with any drive platform. Migrated ESP-NOW → BLE, with link-loss detection via the supervision timeout instead of external keep-alives.</span><span lang="de">Jede Bedieneinheit lässt sich mit jeder Antriebsplattform koppeln. Umstieg von ESP-NOW auf BLE; Verbindungsverluste werden über den Supervision-Timeout statt über externe Keep-Alives erkannt.</span></li>
+                <li><span lang="en">App-level mutual authentication: SHA-256 HMAC attestation, eFuse-burned keys, 128-bit OOB bonding and RPA/IRK identity resolution.</span><span lang="de">Gegenseitige Authentifizierung auf Anwendungsebene: SHA-256-HMAC-Attestierung, in eFuses gebrannte Schlüssel, 128-Bit-OOB-Bonding und RPA/IRK-Identitätsauflösung.</span></li>
+                <li><span lang="en">Android app for the whole fleet: bonding, OTA updates (CRC-32, per-session auth), live telemetry and GPS-referenced logging.</span><span lang="de">Android-App für die gesamte Geräteflotte: Bonding, OTA-Updates (CRC-32, Authentifizierung pro Sitzung), Live-Telemetrie und GPS-referenziertes Logging.</span></li>
+              </ul>
+              <p class="tags mono"><span>BLE</span><span>Security</span><span>OTA</span><span>Android</span></p>
+            </article>
+          </div>
+        </section>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[05]</span><span>NIT TRICHY · 2024</span></header>
+          <div class="media-row">
+            <figure>
+              <video class="clip" src="assets/gait-target.mp4" poster="assets/gait-target.jpg" muted loop playsinline preload="none" aria-label="Animation of the target gait for one leg"></video>
+              <figcaption><span lang="en">Target gait</span><span lang="de">Soll-Gangbild</span></figcaption>
+            </figure>
+            <figure>
+              <div class="yt" data-yt="https://youtube.com/shorts/W6xyI2g84_Q"></div>
+              <figcaption><span lang="en">Single-leg hardware test</span><span lang="de">Hardwaretest mit einem Bein</span></figcaption>
+            </figure>
+          </div>
+          <h3><span lang="en">4-DOF Lower-Limb Exoskeleton</span><span lang="de">4-DOF-Exoskelett für die unteren Extremitäten</span></h3>
+          <p class="card-sub">
+            <span lang="en">Low-cost exoskeleton for strength augmentation. Undergraduate thesis.</span>
+            <span lang="de">Kostengünstiges Exoskelett zur Kraftunterstützung. Bachelorarbeit.</span>
+          </p>
+          <ul>
+            <li><span lang="en">System identification on a 1-DOF testbed to model Maxon EC-90 flat motors with ESCON 50/8 drivers.</span><span lang="de">Systemidentifikation an einem 1-DOF-Prüfstand zur Modellierung von Maxon-EC-90-Flachmotoren mit ESCON-50/8-Reglern.</span></li>
+            <li><span lang="en">Hybrid bang-bang + PD position controller on ESP32 with BNO055 IMU feedback, plus active compensation of thigh-induced disturbances.</span><span lang="de">Hybrider Positionsregler (Bang-Bang + PD) auf dem ESP32 mit BNO055-IMU-Rückführung sowie aktive Kompensation von Störungen durch die Oberschenkelbewegung.</span></li>
+            <li><span lang="en">Feed-forward gait trajectories with settling-time logic for continuous, fluid gait cycles.</span><span lang="de">Vorgesteuerte Gangtrajektorien mit Einschwingzeit-Logik für kontinuierliche, flüssige Gangzyklen.</span></li>
+          </ul>
+          <p class="tags mono"><span>Exoskeleton</span><span>System ID</span><span>ESP32</span><span>Control</span></p>
+        </article>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[06]</span><span>R2D2 LAB · 2025</span></header>
+          <div class="media-row">
+            <figure>
+              <div class="yt" data-yt="https://youtube.com/shorts/QMziEAChtHo"></div>
+              <figcaption><span lang="en">No-load test</span><span lang="de">Test ohne Last</span></figcaption>
+            </figure>
+            <figure>
+              <div class="yt" data-yt="https://youtube.com/shorts/wjMVhiK7juM"></div>
+              <figcaption><span lang="en">Load test: 110 kg total (80 kg user)</span><span lang="de">Lasttest: 110 kg gesamt (80 kg Person)</span></figcaption>
+            </figure>
+          </div>
+          <h3><span lang="en">Wheelchair Stair Climber</span><span lang="de">Treppensteighilfe für Rollstühle</span></h3>
+          <p class="card-sub">
+            <span lang="en">Low-cost stair-climbing attachment for manual wheelchairs, built for low-resource settings.</span>
+            <span lang="de">Kostengünstiger Treppensteig-Aufsatz für Greifreifenrollstühle, ausgelegt für ressourcenarme Umgebungen.</span>
+          </p>
+          <ul>
+            <li><span lang="en">Designed and built a mechanical stair-climber module that attaches to standard wheelchairs, prioritising simplicity, robustness and ease of repair.</span><span lang="de">Mechanisches Treppensteig-Modul für Standard-Rollstühle entworfen und gebaut, mit Fokus auf Einfachheit, Robustheit und Reparierbarkeit.</span></li>
+            <li><span lang="en">555-timer DC motor controller with no microcontroller: switches for power and direction, a potentiometer for speed. Repairable by simply swapping components.</span><span lang="de">DC-Motorsteuerung auf Basis eines 555-Timers, ganz ohne Mikrocontroller: Schalter für Ein/Aus und Richtung, Potentiometer für die Geschwindigkeit. Reparatur durch einfachen Bauteiltausch.</span></li>
+            <li><span lang="en">Validated with a <strong>110 kg</strong> total load (80 kg user + wheelchair + unit): stable ascent and descent with no thermal or control issues. Handed off to a successor team, who added microcontroller-based differential control for curved stairs.</span><span lang="de">Mit <strong>110 kg</strong> Gesamtlast validiert (80 kg Person + Rollstuhl + Modul): stabiles Auf- und Absteigen ohne thermische oder regelungstechnische Probleme. Übergabe an ein Nachfolgeteam, das eine mikrocontrollerbasierte Differenzialsteuerung für gewendelte Treppen ergänzte.</span></li>
+          </ul>
+          <p class="tags mono"><span>Mechanical design</span><span>DC motor</span><span>555 timer</span><span>Low-resource</span></p>
+        </article>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[07]</span><span>IMPERIAL · 2023–24</span></header>
+          <h3><span lang="en">Self-Balancing Wheelchair</span><span lang="de">Selbstbalancierender Rollstuhl</span></h3>
+          <p class="card-sub">
+            <span lang="en">Simulation and proof-of-concept with the Human Robotics Group, Imperial College London (remote).</span>
+            <span lang="de">Simulation und Proof-of-Concept mit der Human Robotics Group, Imperial College London (remote).</span>
+          </p>
+          <ul>
+            <li><span lang="en">Gain-scheduled, model-free adaptive PID controller (MISO) in ROS for tilt and yaw stabilisation.</span><span lang="de">Gain-scheduled, modellfreier adaptiver PID-Regler (MISO) in ROS zur Stabilisierung von Neigung und Gierwinkel.</span></li>
+            <li><span lang="en">Gazebo simulation-and-validation loop, plus a data-acquisition node for the VESC and a BNO085 IMU.</span><span lang="de">Simulations- und Validierungsschleife in Gazebo sowie ein Datenerfassungs-Node für VESC und BNO085-IMU.</span></li>
+            <li><span lang="en">Stable balance for up to <strong>52 s</strong> (yaw within 5°, tilt 2–5° from setpoint). Traced the remaining instability to incorrect joint definitions in the model.</span><span lang="de">Stabiles Balancieren bis zu <strong>52 s</strong> (Gierwinkel innerhalb von 5°, Neigung 2–5° um den Sollwert). Verbleibende Instabilität auf fehlerhafte Gelenkdefinitionen im Modell zurückgeführt.</span></li>
+          </ul>
+          <p class="tags mono"><span>ROS</span><span>Gazebo</span><span>Adaptive PID</span><span>VESC</span></p>
+        </article>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[08]</span><span>R2D2 LAB · 2026</span></header>
+          <h3>Atom</h3>
+          <p class="card-sub">
+            <span lang="en">Low-cost joystick-controlled powered wheelchair with real-time safety monitoring.</span>
+            <span lang="de">Kostengünstiger, joystickgesteuerter Elektrorollstuhl mit Sicherheitsüberwachung in Echtzeit.</span>
+          </p>
+          <ul>
+            <li><span lang="en">Motor-control firmware on STM32G030 (Cortex-M0+): 1 kHz DMA-driven ADC sampling, TIM1 dual-channel PWM, arcade-drive mixing.</span><span lang="de">Motorsteuerungs-Firmware auf dem STM32G030 (Cortex-M0+): DMA-gestützte ADC-Abtastung mit 1 kHz, Zweikanal-PWM über TIM1, Arcade-Drive-Mischung.</span></li>
+            <li><span lang="en">Exponential smoothing and dead-zone filtering to remove joystick drift. 3-stage speed scaling via EXTI interrupts.</span><span lang="de">Exponentielle Glättung und Totzonenfilter gegen Joystick-Drift. Dreistufige Geschwindigkeitswahl über EXTI-Interrupts.</span></li>
+            <li><span lang="en">Bufferless SSD1306 OLED driver for live telemetry. Low-voltage and limit-switch fail-safes cut motor power on faults.</span><span lang="de">Pufferloser SSD1306-OLED-Treiber für Live-Telemetrie. Unterspannungs- und Endschalter-Abschaltung trennt die Motoren bei Fehlern.</span></li>
+          </ul>
+          <p class="tags mono"><span>STM32</span><span>DMA</span><span>PWM</span><span>Safety</span></p>
+        </article>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[09]</span><span>SIH · 2022</span></header>
+          <h3>ANVI</h3>
+          <p class="card-sub">
+            <span lang="en">Navigation aid for visually impaired users. National winner, Smart India Hackathon 2022.</span>
+            <span lang="de">Navigationshilfe für Menschen mit Sehbehinderung. Nationales Siegerteam beim Smart India Hackathon 2022.</span>
+          </p>
+          <ul>
+            <li><span lang="en">ESP32 platform combining an MPU6050 IMU (fall detection), TF-Luna LiDAR (obstacle sensing) and Neo-6M GPS (location tracking).</span><span lang="de">ESP32-Plattform mit MPU6050-IMU (Sturzerkennung), TF-Luna-LiDAR (Hinderniserkennung) und Neo-6M-GPS (Ortung).</span></li>
+            <li><span lang="en">Real-time firmware: consistent obstacle detection at 50 cm with audio alerts, and an SOS email within <strong>30 s</strong> of a detected fall. Validated in controlled field trials.</span><span lang="de">Echtzeit-Firmware: zuverlässige Hinderniserkennung auf 50 cm mit akustischen Warnungen und SOS-E-Mail innerhalb von <strong>30 s</strong> nach einem erkannten Sturz. In kontrollierten Feldversuchen validiert.</span></li>
+          </ul>
+          <p class="tags mono"><span>ESP32</span><span>Sensor fusion</span><span>LiDAR</span><span>Assistive tech</span></p>
+        </article>
+
+        <article class="card" data-yt="">
+          <header class="card-head mono"><span>[10]</span><span>THRYV + INDEP. · 2025</span></header>
+          <div class="media-row">
+            <figure>
+              <video class="clip" src="assets/foc-board.mp4" poster="assets/foc-board.jpg" muted loop playsinline preload="none" aria-label="The custom Thryv controller board, shown front and back"></video>
+              <figcaption><span lang="en">Custom Thryv controller board</span><span lang="de">Eigene Thryv-Reglerplatine</span></figcaption>
+            </figure>
+            <figure>
+              <div class="yt" data-yt="https://youtube.com/shorts/mwr5E-zHRcs"></div>
+              <figcaption><span lang="en">Controller-board bench test with VESC Tool</span><span lang="de">Prüfstandstest der Platine mit VESC Tool</span></figcaption>
+            </figure>
+          </div>
+          <h3><span lang="en">FOC Motor-Controller R&amp;D</span><span lang="de">FOC-Motorregler: Forschung &amp; Entwicklung</span></h3>
+          <p class="card-sub">
+            <span lang="en">Research for Thryv's BLDC controller, plus an independent FOC testbed.</span>
+            <span lang="de">Grundlagenarbeit für Thryvs BLDC-Motorregler sowie ein eigener FOC-Prüfstand.</span>
+          </p>
+          <ul>
+            <li><span lang="en">Clarke/Park transforms, current-loop structure and their circuit-level implications. Designed and built a DRV8300-based testbed.</span><span lang="de">Clarke-/Park-Transformation, Struktur des Stromregelkreises und die Folgen für die Schaltung. Entwurf und Aufbau eines Prüfstands auf Basis des DRV8300.</span></li>
+            <li><span lang="en">Benchmarked integrated FOC ICs (TI MCF8329A vs. ADI Trinamic TMC9660/TMC6460) on rotor-position estimation and sensored/sensorless trade-offs.</span><span lang="de">Vergleich integrierter FOC-ICs (TI MCF8329A vs. ADI Trinamic TMC9660/TMC6460) hinsichtlich Rotorlageschätzung und sensorbehaftetem/sensorlosem Betrieb.</span></li>
+            <li><span lang="en">Compared VESC, ODrive and Moteus designs and reverse-engineered the FSESC to guide Thryv's layout decisions on thermals, EMI, size and cost.</span><span lang="de">Analyse von VESC, ODrive und Moteus sowie Reverse Engineering des FSESC als Grundlage für Layout-Entscheidungen zu Wärme, EMV, Baugröße und Kosten.</span></li>
+          </ul>
+          <p class="tags mono"><span>FOC</span><span>BLDC</span><span>Gate drivers</span><span>EMI</span></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">02</span><span lang="en">Experience</span><span lang="de">Berufserfahrung</span></h2>
+
+      <ol class="timeline">
+        <li>
+          <p class="tl-date mono">05/2022 – 07/2026</p>
+          <h3>THRYV Mobility Pvt. Ltd. · IIT Madras</h3>
+          <p class="tl-role">
+            <span lang="en">Mechatronics Team Lead (2024–26) · Embedded Electronics Intern (2022, 2023–24) · Chennai, India</span>
+            <span lang="de">Teamleitung Mechatronik (2024–26) · Praktikum Embedded-Elektronik (2022, 2023–24) · Chennai, Indien</span>
+          </p>
+          <p>
+            <span lang="en">Took three assistive-mobility products (Smart-Wheels, Three-Way Power-Assist, Gesture Control Unit) and a shared wireless platform from prototype to production. Led embedded teams of 2–3, coordinated with the mechanical and electronics teams, and mentored 2 engineering trainees and 6 interns.</span>
+            <span lang="de">Drei Produkte für assistive Mobilität (Smart-Wheels, Three-Way Power-Assist, Gesture Control Unit) sowie eine gemeinsame Funkplattform vom Prototyp bis zur Serie gebracht. Leitung von Embedded-Teams mit 2–3 Personen, Abstimmung mit den Mechanik- und Elektronikteams und Betreuung von 2 Trainees und 6 Praktikant:innen.</span>
+          </p>
+        </li>
+        <li>
+          <p class="tl-date mono">06/2023 – 02/2024</p>
+          <h3>Imperial College London</h3>
+          <p class="tl-role">
+            <span lang="en">Mechatronics Research Intern · Human Robotics Group (Dr. Rejin John Varghese) · Remote</span>
+            <span lang="de">Forschungspraktikum Mechatronik · Human Robotics Group (Dr. Rejin John Varghese) · Remote</span>
+          </p>
+          <p>
+            <span lang="en">Adaptive control, simulation and proof-of-concept prototyping for a self-balancing wheelchair (project 07).</span>
+            <span lang="de">Adaptive Regelung, Simulation und Proof-of-Concept-Prototyping für einen selbstbalancierenden Rollstuhl (Projekt 07).</span>
+          </p>
+        </li>
+      </ol>
+
+      <h2 class="section-h section-h-sub"><span class="mono idx">03</span><span lang="en">Education</span><span lang="de">Ausbildung</span></h2>
+      <ol class="timeline">
+        <li>
+          <p class="tl-date mono">2026 – 2028</p>
+          <h3>RWTH Aachen University</h3>
+          <p class="tl-role">
+            <span lang="en">M.Sc. Robotic Systems Engineering (in progress)</span>
+            <span lang="de">M.Sc. Robotic Systems Engineering (laufend)</span>
+          </p>
+        </li>
+        <li>
+          <p class="tl-date mono">2020 – 2024</p>
+          <h3>National Institute of Technology, Tiruchirappalli</h3>
+          <p class="tl-role">
+            <span lang="en">B.Tech. Mechanical Engineering · CGPA 8.51/10 · First Class with Distinction</span>
+            <span lang="de">B.Tech. Maschinenbau · CGPA 8,51/10 · First Class with Distinction</span>
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ OPEN SOURCE ============ -->
+  <section id="open-source" class="section">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">04</span>Open source</h2>
+      <ul class="oss">
+        <li>
+          <div class="oss-top"><h3>VESC-CAN driver for ESP-IDF</h3><span class="mono date">02/2026</span></div>
+          <p><span lang="en">The first VESC-CAN component on the ESP-IDF Component Registry, built for the node-based TWAI driver in ESP-IDF v5.5. ISR-safe, fixed-point parsing of the full status set and the complete single-frame command set.</span><span lang="de">Die erste VESC-CAN-Komponente in der ESP-IDF Component Registry, entwickelt für den knotenbasierten TWAI-Treiber aus ESP-IDF v5.5. ISR-sichere Festkomma-Auswertung aller Statusnachrichten und vollständiger Single-Frame-Befehlssatz.</span></p>
+          <p class="links mono"><a href="https://components.espressif.com/components/adithya-187326/vesc-can" target="_blank" rel="noopener">Registry ↗</a><a href="https://github.com/Adithya-187326/vesc-can" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </li>
+        <li>
+          <div class="oss-top"><h3>BNO055 driver for ESP-IDF</h3><span class="mono date">10/2025</span></div>
+          <p><span lang="en">The first BNO055 IMU component on the ESP-IDF Component Registry. Documented, drop-in, with examples.</span><span lang="de">Die erste BNO055-IMU-Komponente in der ESP-IDF Component Registry. Dokumentiert, direkt einsetzbar und mit Beispielen.</span></p>
+          <p class="links mono"><a href="https://components.espressif.com/components/adithya-187326/bno055" target="_blank" rel="noopener">Registry ↗</a><a href="https://github.com/Adithya-187326/bno055" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </li>
+        <li>
+          <div class="oss-top"><h3>NimBLE OTA example</h3><span class="mono date">09/2025</span></div>
+          <p><span lang="en">BLE over-the-air update pipeline for ESP32 (NimBLE): packet framing, ring-buffer management and safe flash-write sequencing.</span><span lang="de">BLE-Over-the-Air-Update-Pipeline für den ESP32 (NimBLE): Paketaufbau, Ringpuffer-Verwaltung und sichere Flash-Schreibsequenzen.</span></p>
+          <figure class="media-fig">
+            <div class="yt" data-yt="https://youtu.be/0q1Ny0Ta5I8"></div>
+            <figcaption><span lang="en">Demo: an over-the-air firmware update over BLE on an ESP32 flashed with the example code</span><span lang="de">Demo: Over-the-Air-Firmware-Update per BLE auf einem ESP32, auf dem der Beispielcode läuft</span></figcaption>
+          </figure>
+          <p class="links mono"><a href="https://github.com/Adithya-187326/nimble-ota-basic" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </li>
+        <li>
+          <div class="oss-top"><h3>ESP-IDF hardware driver library</h3><span class="mono date">08/2025</span></div>
+          <p><span lang="en">Modular C drivers for sensors, displays and peripherals, with a consistent API and structured error handling.</span><span lang="de">Modulare C-Treiber für Sensoren, Displays und Peripherie mit einheitlicher API und strukturierter Fehlerbehandlung.</span></p>
+          <p class="links mono"><a href="https://github.com/Adithya-187326/idf-external-hw-drivers" target="_blank" rel="noopener">GitHub ↗</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP ============ -->
+  <section id="leadership" class="section">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">05</span><span lang="en">Leadership &amp; involvement</span><span lang="de">Engagement</span></h2>
+      <ul class="oss">
+        <li>
+          <div class="oss-top"><h3><span lang="en">Project Manager, Robotics &amp; Machine Intelligence Club</span><span lang="de">Projektmanagement, Robotics &amp; Machine Intelligence Club</span></h3><span class="mono date">2021–24</span></div>
+          <p><span lang="en">Mentored teams of 4–5 building a rover, robotic arm, hexapod and biped, from mechanical design and control to competition prep. Contributed to four internal projects, including ANVI and a self-balancing bot. With a start-up partner, set up internships and training for club members and ran 3-day workshops on mechanics, electronics and image processing for students from rural communities.</span><span lang="de">Betreuung von Teams mit 4–5 Personen beim Bau von Rover, Roboterarm, Hexapod und Zweibeiner, von der mechanischen Konstruktion über die Regelung bis zur Wettbewerbsvorbereitung. Mitarbeit an vier internen Projekten, darunter ANVI und ein selbstbalancierender Roboter. Mit einem Start-up-Partner Praktika und Schulungen für Clubmitglieder vermittelt sowie dreitägige Workshops zu Mechanik, Elektronik und Bildverarbeitung für Lernende aus ländlichen Regionen organisiert.</span></p>
+          <p class="links mono"><a href="https://rmi.nitt.edu/" target="_blank" rel="noopener">RMI, NIT Trichy ↗</a></p>
+        </li>
+        <li>
+          <div class="oss-top"><h3><span lang="en">Sponsorship &amp; Partnerships Coordinator, Synergy</span><span lang="de">Sponsoring &amp; Partnerschaften, Synergy</span></h3><span class="mono date">2021–23</span></div>
+          <p><span lang="en">Secured corporate and media partners for the mechanical department's technical symposium at NIT Trichy.</span><span lang="de">Gewinnung von Unternehmens- und Medienpartnern für das technische Symposium des Maschinenbau-Fachbereichs der NIT Trichy.</span></p>
+        </li>
+        <li>
+          <div class="oss-top"><h3><span lang="en">Senior Events Manager, Festember</span><span lang="de">Senior Events Manager, Festember</span></h3><span class="mono date">2021–22</span></div>
+          <p><span lang="en">Led the Fashion and Telugu Literature clusters and managed 10+ events at a national inter-college cultural festival. Hosted the newly launched Gaming cluster in 2021.</span><span lang="de">Leitung der Bereiche Mode und Telugu-Literatur und Organisation von über 10 Veranstaltungen bei einem landesweiten, hochschulübergreifenden Kulturfestival. Moderation des 2021 neu eingeführten Gaming-Bereichs.</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS + ACHIEVEMENTS ============ -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">06</span><span lang="en">Skills</span><span lang="de">Kenntnisse</span></h2>
+      <dl class="skills">
+        <div><dt class="mono"><span lang="en">Languages</span><span lang="de">Programmierung</span></dt><dd>Embedded C/C++ · Python · MATLAB · Kotlin · Lua · HTML/CSS</dd></div>
+        <div><dt class="mono">Embedded</dt><dd>ESP-IDF · STM32CubeIDE · Arduino IDE · CAN · BLE · I²C · SPI · UART</dd></div>
+        <div><dt class="mono"><span lang="en">Robotics &amp; sim</span><span lang="de">Robotik &amp; Simulation</span></dt><dd>ROS · Gazebo · CoppeliaSim · CircuitLab</dd></div>
+        <div><dt class="mono"><span lang="en">Tools</span><span lang="de">Werkzeuge</span></dt><dd>Git · Linux · Android Studio</dd></div>
+        <div><dt class="mono">CAD / EDA</dt><dd>EasyEDA · Eagle · Onshape · Fusion 360 · Inventor</dd></div>
+        <div><dt class="mono">Python</dt><dd>NumPy · OpenCV · MediaPipe · Matplotlib · Bleak · asyncio · PySerial · Esptool</dd></div>
+        <div><dt class="mono"><span lang="en">Spoken</span><span lang="de">Sprachen</span></dt><dd><span lang="en">English C2 · Tamil &amp; Telugu (native) · Hindi (working proficiency) · German A1 (RWTH International Academy course, finishing March 2027)</span><span lang="de">Englisch C2 · Tamil &amp; Telugu (Muttersprachen) · Hindi (gute Kenntnisse) · Deutsch A1 (Kurs an der RWTH International Academy, Abschluss März 2027)</span></dd></div>
+      </dl>
+
+      <h2 class="section-h section-h-sub"><span class="mono idx">07</span><span lang="en">Achievements</span><span lang="de">Auszeichnungen</span></h2>
+      <ul class="awards">
+        <li><span class="mono date">2022</span><span><strong>Smart India Hackathon</strong> · <span lang="en">National winner, 1st of 2000+ teams</span><span lang="de">Nationales Siegerteam, Platz 1 von über 2000 Teams</span></span></li>
+        <li><span class="mono date">2024</span><span><strong>GATE</strong> · <span lang="en">92.7 percentile, Instrumentation Engineering</span><span lang="de">92,7. Perzentil, Instrumentation Engineering</span></span></li>
+        <li><span class="mono date">2025</span><span><strong>GRE</strong> · 325 (Quant 170/170)</span></li>
+        <li><span class="mono date">2022</span><span><strong>e-Yantra Robotics, IIT Bombay</strong> · <span lang="en">Semi-finalist, top 13 of 500+ teams</span><span lang="de">Halbfinale, unter den besten 13 von über 500 Teams</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2 class="section-h"><span class="mono idx">08</span><span lang="en">Let's talk</span><span lang="de">Kontakt</span></h2>
+      <p class="contact-lede">
+        <span lang="en">Working on rehab robotics, prosthetics or exoskeletons? I'd love to hear about it.</span>
+        <span lang="de">Sie arbeiten an Rehabilitationsrobotik, Prothetik oder Exoskeletten? Ich freue mich auf Ihre Nachricht.</span>
+      </p>
+      <a class="contact-mail" href="mailto:adithyavnarayanan@gmail.com">adithyavnarayanan@gmail.com</a>
+      <p class="links mono contact-links">
+        <a href="https://www.linkedin.com/in/adithya-venkata-narayanan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/Adithya-187326" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="assets/Adithya_Venkata_Narayanan_CV.pdf" download><span lang="en">CV (PDF) ↓</span><span lang="de">Lebenslauf ↓</span></a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap mono">© 2026 Adithya Venkata Narayanan · Aachen</div>
+</footer>
+
+<a class="to-top" href="#top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+  <span class="sr-only" lang="en">Back to top</span><span class="sr-only" lang="de">Nach oben</span>
+</a>
+
+<script src="assets/main.js"></script>
 </body>
-</html> 
+</html>
